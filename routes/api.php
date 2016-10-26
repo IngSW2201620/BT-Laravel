@@ -18,3 +18,24 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:api');
 
 
+Route::resource('administradors', 'AdministradorAPIController');
+
+Route::resource('users', 'UserAPIController');
+
+Route::resource('tickets', 'TicketAPIController');
+
+Route::resource('sellers', 'SellerAPIController');
+
+Route::resource('sellers', 'SellerAPIController');
+
+Route::resource('roads', 'roadAPIController');
+
+Route::resource('buses', 'busAPIController');
+
+Route::resource('routeschedules', 'routescheduleAPIController');
+
+Route::resource('drivers', 'driverAPIController');
+
+Route::resource('stops', 'stopAPIController');
+
+Route::resource('passengers', 'passengerAPIController');
