@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <li class="{{ Request::is('buses*') ? 'active' : '' }}">
     <a href="{!! route('buses.index') !!}"><i class="fa fa-edit"></i><span>buses</span></a>
 </li>
@@ -53,4 +54,6 @@
 <li class="{{ Request::is('tickets*') ? 'active' : '' }}">
     <a href="{!! route('tickets.index') !!}"><i class="fa fa-edit"></i><span>tickets</span></a>
 </li>
+=======
+>>>>>>> parent of 7bd08dc... MigracionesBasicas
 

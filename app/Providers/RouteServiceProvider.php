@@ -75,6 +75,10 @@ class RouteServiceProvider extends ServiceProvider
             'as' => 'api.',
         ], function ($router) {
             require base_path('routes/api.php');
+<<<<<<< HEAD
         });    
+=======
+        });     
+>>>>>>> parent of 7bd08dc... MigracionesBasicas
     }
 }

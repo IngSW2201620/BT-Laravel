@@ -18,6 +18,7 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:api');
 
 
+<<<<<<< HEAD
 Route::resource('buses', 'busesAPIController');
 
 Route::resource('route_statuses', 'route_statusesAPIController');
@@ -45,3 +46,5 @@ Route::resource('road_stops', 'roadStopsAPIController');
 Route::resource('routes', 'routesAPIController');
 
 Route::resource('tickets', 'ticketsAPIController');
+=======
+>>>>>>> parent of 7bd08dc... MigracionesBasicas

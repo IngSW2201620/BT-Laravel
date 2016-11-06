@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
@@ -23,11 +24,16 @@ Route::get('/home', 'HomeController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+=======
+
+Auth::routes();
+>>>>>>> parent of 7bd08dc... MigracionesBasicas
 
 Route::resource('buses', 'busesController');
 
 Route::resource('routeStatuses', 'route_statusesController');
 
+<<<<<<< HEAD
 Route::resource('routeStatuses', 'route_statusesController');
 
 Route::resource('buses', 'busesController');
@@ -51,3 +57,5 @@ Route::resource('roadStops', 'roadStopsController');
 Route::resource('routes', 'routesController');
 
 Route::resource('tickets', 'ticketsController');
+=======
+>>>>>>> parent of 7bd08dc... MigracionesBasicas
