@@ -1,42 +1,60 @@
 <!-- Id Field -->
 <div class="form-group">
     {!! Form::label('id', 'Id:') !!}
-    <p>{!! $driver->id !!}</p>
+    <p>{!! $drivers->id !!}</p>
 </div>
 
-<!-- Firstname Field -->
+<!-- First Name Field -->
 <div class="form-group">
-    {!! Form::label('firstName', 'Firstname:') !!}
-    <p>{!! $driver->firstName !!}</p>
+    {!! Form::label('first_name', 'First Name:') !!}
+    <p>{!! $drivers->first_name !!}</p>
 </div>
 
-<!-- Lastname Field -->
+<!-- Last Name Field -->
 <div class="form-group">
-    {!! Form::label('lastName', 'Lastname:') !!}
-    <p>{!! $driver->lastName !!}</p>
+    {!! Form::label('last_name', 'Last Name:') !!}
+    <p>{!! $drivers->last_name !!}</p>
+</div>
+
+<!-- Document Type Field -->
+<div class="form-group">
+    {!! Form::label('document_type', 'Document Type:') !!}
+    <p>{!! $drivers->document_type !!}</p>
+</div>
+
+<!-- Document Number Field -->
+<div class="form-group">
+    {!! Form::label('document_number', 'Document Number:') !!}
+    <p>{!! $drivers->document_number !!}</p>
+</div>
+
+<!-- Driving License Id Field -->
+<div class="form-group">
+    {!! Form::label('driving_license_id', 'Driving License Id:') !!}
+    <p>{!! $drivers->driving_license_id !!}</p>
+</div>
+
+<!-- Rh Field -->
+<div class="form-group">
+    {!! Form::label('rh', 'Rh:') !!}
+    <p>{!! $drivers->rh !!}</p>
 </div>
 
 <!-- Photo Field -->
 <div class="form-group">
     {!! Form::label('photo', 'Photo:') !!}
-    <p>{!! $driver->photo !!}</p>
-</div>
-
-<!-- Administrator Field -->
-<div class="form-group">
-    {!! Form::label('administrator', 'Administrator:') !!}
-    <p>{!! $driver->administrator !!}</p>
+    <p>{!! $drivers->photo !!}</p>
 </div>
 
 <!-- Created At Field -->
 <div class="form-group">
     {!! Form::label('created_at', 'Created At:') !!}
-    <p>{!! $driver->created_at !!}</p>
+    <p>{!! $drivers->created_at !!}</p>
 </div>
 
 <!-- Updated At Field -->
 <div class="form-group">
     {!! Form::label('updated_at', 'Updated At:') !!}
-    <p>{!! $driver->updated_at !!}</p>
+    <p>{!! $drivers->updated_at !!}</p>
 </div>
 

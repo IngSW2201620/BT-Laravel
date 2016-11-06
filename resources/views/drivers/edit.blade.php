@@ -3,7 +3,7 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Driver
+            Drivers
         </h1>
    </section>
    <div class="content">
@@ -11,7 +11,7 @@
        <div class="box box-primary">
            <div class="box-body">
                <div class="row">
-                   {!! Form::model($driver, ['route' => ['drivers.update', $driver->id], 'method' => 'patch']) !!}
+                   {!! Form::model($drivers, ['route' => ['drivers.update', $drivers->id], 'method' => 'patch']) !!}
 
                         @include('drivers.fields')
 

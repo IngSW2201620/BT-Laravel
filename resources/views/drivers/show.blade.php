@@ -3,7 +3,7 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Driver
+            Drivers
         </h1>
     </section>
     <div class="content">

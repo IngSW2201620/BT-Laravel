@@ -1,60 +1,36 @@
 <!-- Id Field -->
 <div class="form-group">
     {!! Form::label('id', 'Id:') !!}
-    <p>{!! $bus->id !!}</p>
+    <p>{!! $buses->id !!}</p>
 </div>
 
-<!-- Licenseplate Field -->
+<!-- Name Field -->
 <div class="form-group">
-    {!! Form::label('licensePlate', 'Licenseplate:') !!}
-    <p>{!! $bus->licensePlate !!}</p>
-</div>
-
-<!-- Capacity Field -->
-<div class="form-group">
-    {!! Form::label('capacity', 'Capacity:') !!}
-    <p>{!! $bus->capacity !!}</p>
-</div>
-
-<!-- Currentlatitude Field -->
-<div class="form-group">
-    {!! Form::label('currentLatitude', 'Currentlatitude:') !!}
-    <p>{!! $bus->currentLatitude !!}</p>
-</div>
-
-<!-- Currentelongitude Field -->
-<div class="form-group">
-    {!! Form::label('currenteLongitude', 'Currentelongitude:') !!}
-    <p>{!! $bus->currenteLongitude !!}</p>
-</div>
-
-<!-- Soldseats Field -->
-<div class="form-group">
-    {!! Form::label('soldSeats', 'Soldseats:') !!}
-    <p>{!! $bus->soldSeats !!}</p>
-</div>
-
-<!-- Color Field -->
-<div class="form-group">
-    {!! Form::label('color', 'Color:') !!}
-    <p>{!! $bus->color !!}</p>
-</div>
-
-<!-- Photo Field -->
-<div class="form-group">
-    {!! Form::label('photo', 'Photo:') !!}
-    <p>{!! $bus->photo !!}</p>
+    {!! Form::label('name', 'Name:') !!}
+    <p>{!! $buses->name !!}</p>
 </div>
 
 <!-- Created At Field -->
 <div class="form-group">
     {!! Form::label('created_at', 'Created At:') !!}
-    <p>{!! $bus->created_at !!}</p>
+    <p>{!! $buses->created_at !!}</p>
+</div>
+
+<!-- Update At Field -->
+<div class="form-group">
+    {!! Form::label('update_at', 'Update At:') !!}
+    <p>{!! $buses->update_at !!}</p>
+</div>
+
+<!-- Created At Field -->
+<div class="form-group">
+    {!! Form::label('created_at', 'Created At:') !!}
+    <p>{!! $buses->created_at !!}</p>
 </div>
 
 <!-- Updated At Field -->
 <div class="form-group">
     {!! Form::label('updated_at', 'Updated At:') !!}
-    <p>{!! $bus->updated_at !!}</p>
+    <p>{!! $buses->updated_at !!}</p>
 </div>
 

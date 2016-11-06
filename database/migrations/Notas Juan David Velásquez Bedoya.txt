@@ -1,0 +1,37 @@
+Notas Juan David Velásquez Bedoya
+
+El orden de construcción de las tablas, basado en el esquema del profesor es:
+OJO: no usar barra al piso en el nombre, al crear tablas, toca usar mayúscula.
+
+a) las independientes
+	1. buses
+	2. routeStatuses
+	3. drivers
+	4. sellers
+	5. users
+	6. stops	
+
+b) dependientes 1.
+	7. busPositions 
+		$table->foreign('id')->references('id')->on('buses')
+	8. roads
+		$table->foreign('id_source_stop')->references('id')->on('stops')
+		$table->foreign('id_destination_stop')->references('id')->on('stops')
+
+c) dependientes 2.
+	9. roadStops
+		$table->foreign('id_stop')->references('id')->on('stops')
+		$table->foreign('id_road')->references('id')->on('roads')
+	10. routes
+		$table->foreign('id_assigned_driver')->references('id')->on('drivers')
+		$table->foreign('id_assigned_bus')->references('id')->on('buses')
+		$table->foreign('id_road')->references('id')->on('roads')
+		$table->foreign('id_route_status')->references('id')->on('route_statuses')
+
+d) dependientes 3.
+	11. tickets
+		$table->foreign('id_owner')->references('id')->on('users')
+		$table->foreign('id_reserved_route')->references('id')->on('routes')
+		$table->foreign('id_used_route')->references('id')->on('routes')
+		$table->foreign('id_used_stop')->references('id')->on('stops')
+		$table->foreign('id_seller')->references('id')->on('sellers')

@@ -1,18 +1,20 @@
 <?php
 
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| This file is where you may define all of the routes that are handled
+| by your application. Just tell Laravel the URIs it should respond
+| to using a Closure or controller method. Build something great!
+|
+*/
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-
-Route::get('chart/{type}/{x}/{y}', function($type, $x, $y){
-	return "Tipo de grafico: ".$type.", Valor x:".$x." Valor y: ".$y;
-});
-
-Route::get('callto','miControlador@miSolicitud');
-
-//----------- con Rest
-Route::resource('report', 'ReportController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
@@ -21,29 +23,31 @@ Route::get('/home', 'HomeController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::resource('buses', 'busesController');
 
+Route::resource('routeStatuses', 'route_statusesController');
 
-Route::resource('administradors', 'AdministradorController');
+Route::resource('routeStatuses', 'route_statusesController');
 
-Route::resource('users', 'UserController');
+Route::resource('buses', 'busesController');
 
-Route::resource('tickets', 'TicketController');
+Route::resource('routeStatuses', 'route_statusesController');
 
-Route::resource('sellers', 'SellerController');
+Route::resource('routeStatuses', 'routeStatusesController');
 
-Route::resource('sellers', 'SellerController');
+Route::resource('drivers', 'driversController');
 
-Route::resource('roads', 'roadController');
+Route::resource('sellers', 'sellersController');
 
-Route::resource('buses', 'busController');
+Route::resource('stops', 'stopsController');
 
-Route::resource('routeschedules', 'routescheduleController');
+Route::resource('busPositions', 'busPositionsController');
 
-Route::resource('drivers', 'driverController');
+Route::resource('roads', 'roadsController');
 
-Route::resource('stops', 'stopController');
+Route::resource('roadStops', 'roadStopsController');
 
-Route::resource('passengers', 'passengerController');
+Route::resource('routes', 'routesController');
+
+Route::resource('tickets', 'ticketsController');

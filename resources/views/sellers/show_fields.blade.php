@@ -1,36 +1,30 @@
 <!-- Id Field -->
 <div class="form-group">
     {!! Form::label('id', 'Id:') !!}
-    <p>{!! $seller->id !!}</p>
+    <p>{!! $sellers->id !!}</p>
 </div>
 
-<!-- Firstname Field -->
+<!-- First Name Field -->
 <div class="form-group">
-    {!! Form::label('firstName', 'Firstname:') !!}
-    <p>{!! $seller->firstName !!}</p>
+    {!! Form::label('first_name', 'First Name:') !!}
+    <p>{!! $sellers->first_name !!}</p>
 </div>
 
-<!-- Lastname Field -->
+<!-- Last Name Field -->
 <div class="form-group">
-    {!! Form::label('lastName', 'Lastname:') !!}
-    <p>{!! $seller->lastName !!}</p>
-</div>
-
-<!-- Idticket Field -->
-<div class="form-group">
-    {!! Form::label('idTicket', 'Idticket:') !!}
-    <p>{!! $seller->idTicket !!}</p>
+    {!! Form::label('last_name', 'Last Name:') !!}
+    <p>{!! $sellers->last_name !!}</p>
 </div>
 
 <!-- Created At Field -->
 <div class="form-group">
     {!! Form::label('created_at', 'Created At:') !!}
-    <p>{!! $seller->created_at !!}</p>
+    <p>{!! $sellers->created_at !!}</p>
 </div>
 
 <!-- Updated At Field -->
 <div class="form-group">
     {!! Form::label('updated_at', 'Updated At:') !!}
-    <p>{!! $seller->updated_at !!}</p>
+    <p>{!! $sellers->updated_at !!}</p>
 </div>
 

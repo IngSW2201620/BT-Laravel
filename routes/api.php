@@ -18,24 +18,30 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:api');
 
 
-Route::resource('administradors', 'AdministradorAPIController');
+Route::resource('buses', 'busesAPIController');
 
-Route::resource('users', 'UserAPIController');
+Route::resource('route_statuses', 'route_statusesAPIController');
 
-Route::resource('tickets', 'TicketAPIController');
+Route::resource('route_statuses', 'route_statusesAPIController');
 
-Route::resource('sellers', 'SellerAPIController');
+Route::resource('buses', 'busesAPIController');
 
-Route::resource('sellers', 'SellerAPIController');
+Route::resource('route_statuses', 'route_statusesAPIController');
 
-Route::resource('roads', 'roadAPIController');
+Route::resource('route_statuses', 'routeStatusesAPIController');
 
-Route::resource('buses', 'busAPIController');
+Route::resource('drivers', 'driversAPIController');
 
-Route::resource('routeschedules', 'routescheduleAPIController');
+Route::resource('sellers', 'sellersAPIController');
 
-Route::resource('drivers', 'driverAPIController');
+Route::resource('stops', 'stopsAPIController');
 
-Route::resource('stops', 'stopAPIController');
+Route::resource('bus_positions', 'busPositionsAPIController');
 
-Route::resource('passengers', 'passengerAPIController');
+Route::resource('roads', 'roadsAPIController');
+
+Route::resource('road_stops', 'roadStopsAPIController');
+
+Route::resource('routes', 'routesAPIController');
+
+Route::resource('tickets', 'ticketsAPIController');
