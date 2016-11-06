@@ -22,10 +22,10 @@
     {!! Form::text('document_number', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Driving License Id Field -->
+<!-- Driving License Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('driving_license_id', 'Driving License Id:') !!}
-    {!! Form::text('driving_license_id', null, ['class' => 'form-control']) !!}
+    {!! Form::label('driving_license', 'Driving License:') !!}
+    {!! Form::text('driving_license', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Rh Field -->

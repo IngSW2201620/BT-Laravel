@@ -20,7 +20,7 @@ class CreateroutesTable extends Migration
             $table->integer('id_road')->unsigned();
             $table->date('schedule_time');
             $table->integer('id_route_status')->unsigned();
-            $table->date('startDate');
+            $table->date('starDate');
             $table->date('endDate');
             $table->timestamps();
             $table->softDeletes();

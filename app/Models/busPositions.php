@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class busPositions
  * @package App\Models
- * @version November 6, 2016, 5:09 am UTC
+ * @version November 6, 2016, 4:29 pm UTC
  */
 class busPositions extends Model
 {
@@ -33,8 +33,8 @@ class busPositions extends Model
      */
     protected $casts = [
         'id_bus' => 'integer',
-        'latitude' => 'integer',
-        'longitude' => 'integer'
+        'latitude' => 'string',
+        'longitude' => 'string'
     ];
 
     /**

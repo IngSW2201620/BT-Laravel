@@ -34,10 +34,10 @@
     <p>{!! $routes->id_route_status !!}</p>
 </div>
 
-<!-- Startdate Field -->
+<!-- Stardate Field -->
 <div class="form-group">
-    {!! Form::label('startDate', 'Startdate:') !!}
-    <p>{!! $routes->startDate !!}</p>
+    {!! Form::label('starDate', 'Stardate:') !!}
+    <p>{!! $routes->starDate !!}</p>
 </div>
 
 <!-- Enddate Field -->

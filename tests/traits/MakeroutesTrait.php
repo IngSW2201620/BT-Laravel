@@ -47,7 +47,7 @@ trait MakeroutesTrait
             'id_road' => $fake->randomDigitNotNull,
             'schedule_time' => $fake->word,
             'id_route_status' => $fake->randomDigitNotNull,
-            'startDate' => $fake->word,
+            'starDate' => $fake->word,
             'endDate' => $fake->word,
             'created_at' => $fake->word,
             'updated_at' => $fake->word

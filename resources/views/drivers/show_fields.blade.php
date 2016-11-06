@@ -28,10 +28,10 @@
     <p>{!! $drivers->document_number !!}</p>
 </div>
 
-<!-- Driving License Id Field -->
+<!-- Driving License Field -->
 <div class="form-group">
-    {!! Form::label('driving_license_id', 'Driving License Id:') !!}
-    <p>{!! $drivers->driving_license_id !!}</p>
+    {!! Form::label('driving_license', 'Driving License:') !!}
+    <p>{!! $drivers->driving_license !!}</p>
 </div>
 
 <!-- Rh Field -->

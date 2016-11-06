@@ -16,7 +16,7 @@ class routesRepository extends BaseRepository
         'id_road',
         'schedule_time',
         'id_route_status',
-        'startDate',
+        'starDate',
         'endDate'
     ];
 

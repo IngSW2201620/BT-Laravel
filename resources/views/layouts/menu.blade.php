@@ -3,22 +3,6 @@
 </li>
 
 <li class="{{ Request::is('routeStatuses*') ? 'active' : '' }}">
-    <a href="{!! route('routeStatuses.index') !!}"><i class="fa fa-edit"></i><span>route_statuses</span></a>
-</li>
-
-<li class="{{ Request::is('routeStatuses*') ? 'active' : '' }}">
-    <a href="{!! route('routeStatuses.index') !!}"><i class="fa fa-edit"></i><span>route_statuses</span></a>
-</li>
-
-<li class="{{ Request::is('buses*') ? 'active' : '' }}">
-    <a href="{!! route('buses.index') !!}"><i class="fa fa-edit"></i><span>buses</span></a>
-</li>
-
-<li class="{{ Request::is('routeStatuses*') ? 'active' : '' }}">
-    <a href="{!! route('routeStatuses.index') !!}"><i class="fa fa-edit"></i><span>route_statuses</span></a>
-</li>
-
-<li class="{{ Request::is('routeStatuses*') ? 'active' : '' }}">
     <a href="{!! route('routeStatuses.index') !!}"><i class="fa fa-edit"></i><span>routeStatuses</span></a>
 </li>
 

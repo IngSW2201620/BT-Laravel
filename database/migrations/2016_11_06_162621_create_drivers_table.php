@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateroadsTable extends Migration
+class CreatedriversTable extends Migration
 {
 
     /**
@@ -13,11 +13,15 @@ class CreateroadsTable extends Migration
      */
     public function up()
     {
-        Schema::create('roads', function (Blueprint $table) {
+        Schema::create('drivers', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('route');
-            $table->foreign('assignedRoute')->references('id')->on('routeschedules');
+            $table->text('first_name');
+            $table->text('last_name');
+            $table->text('document_type');
+            $table->integer('document_number');
+            $table->text('driving_license');
+            $table->text('rh');
+            $table->text('photo');
             $table->timestamps();
             $table->softDeletes();
         });
@@ -30,6 +34,6 @@ class CreateroadsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('roads');
+        Schema::drop('drivers');
     }
 }

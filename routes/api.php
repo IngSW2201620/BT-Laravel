@@ -20,14 +20,6 @@ Route::get('/user', function (Request $request) {
 
 Route::resource('buses', 'busesAPIController');
 
-Route::resource('route_statuses', 'route_statusesAPIController');
-
-Route::resource('route_statuses', 'route_statusesAPIController');
-
-Route::resource('buses', 'busesAPIController');
-
-Route::resource('route_statuses', 'route_statusesAPIController');
-
 Route::resource('route_statuses', 'routeStatusesAPIController');
 
 Route::resource('drivers', 'driversAPIController');

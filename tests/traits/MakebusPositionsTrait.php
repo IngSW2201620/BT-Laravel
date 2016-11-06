@@ -43,8 +43,8 @@ trait MakebusPositionsTrait
 
         return array_merge([
             'id_bus' => $fake->randomDigitNotNull,
-            'latitude' => $fake->randomDigitNotNull,
-            'longitude' => $fake->randomDigitNotNull,
+            'latitude' => $fake->text,
+            'longitude' => $fake->text,
             'created_at' => $fake->word,
             'updated_at' => $fake->word
         ], $busPositionsFields);

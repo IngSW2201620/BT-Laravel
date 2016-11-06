@@ -4,22 +4,34 @@
     <p>{!! $buses->id !!}</p>
 </div>
 
-<!-- Name Field -->
+<!-- License Plate Field -->
 <div class="form-group">
-    {!! Form::label('name', 'Name:') !!}
-    <p>{!! $buses->name !!}</p>
+    {!! Form::label('license_plate', 'License Plate:') !!}
+    <p>{!! $buses->license_plate !!}</p>
 </div>
 
-<!-- Created At Field -->
+<!-- Brand Field -->
 <div class="form-group">
-    {!! Form::label('created_at', 'Created At:') !!}
-    <p>{!! $buses->created_at !!}</p>
+    {!! Form::label('brand', 'Brand:') !!}
+    <p>{!! $buses->brand !!}</p>
 </div>
 
-<!-- Update At Field -->
+<!-- Model Field -->
 <div class="form-group">
-    {!! Form::label('update_at', 'Update At:') !!}
-    <p>{!! $buses->update_at !!}</p>
+    {!! Form::label('model', 'Model:') !!}
+    <p>{!! $buses->model !!}</p>
+</div>
+
+<!-- Capacity Field -->
+<div class="form-group">
+    {!! Form::label('capacity', 'Capacity:') !!}
+    <p>{!! $buses->capacity !!}</p>
+</div>
+
+<!-- Photo Field -->
+<div class="form-group">
+    {!! Form::label('photo', 'Photo:') !!}
+    <p>{!! $buses->photo !!}</p>
 </div>
 
 <!-- Created At Field -->

@@ -5,7 +5,7 @@
         <th>Id Road</th>
         <th>Schedule Time</th>
         <th>Id Route Status</th>
-        <th>Startdate</th>
+        <th>Stardate</th>
         <th>Enddate</th>
         <th colspan="3">Action</th>
     </thead>
@@ -17,7 +17,7 @@
             <td>{!! $routes->id_road !!}</td>
             <td>{!! $routes->schedule_time !!}</td>
             <td>{!! $routes->id_route_status !!}</td>
-            <td>{!! $routes->startDate !!}</td>
+            <td>{!! $routes->starDate !!}</td>
             <td>{!! $routes->endDate !!}</td>
             <td>
                 {!! Form::open(['route' => ['routes.destroy', $routes->id], 'method' => 'delete']) !!}

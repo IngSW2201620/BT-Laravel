@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class roads
  * @package App\Models
- * @version November 6, 2016, 5:14 am UTC
+ * @version November 6, 2016, 4:30 pm UTC
  */
 class roads extends Model
 {

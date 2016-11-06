@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class routes
  * @package App\Models
- * @version November 6, 2016, 5:21 am UTC
+ * @version November 6, 2016, 4:42 pm UTC
  */
 class routes extends Model
 {
@@ -26,7 +26,7 @@ class routes extends Model
         'id_road',
         'schedule_time',
         'id_route_status',
-        'startDate',
+        'starDate',
         'endDate'
     ];
 
@@ -41,7 +41,7 @@ class routes extends Model
         'id_road' => 'integer',
         'schedule_time' => 'date',
         'id_route_status' => 'integer',
-        'startDate' => 'date',
+        'starDate' => 'date',
         'endDate' => 'date'
     ];
 

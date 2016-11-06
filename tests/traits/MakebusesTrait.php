@@ -42,9 +42,11 @@ trait MakebusesTrait
         $fake = Faker::create();
 
         return array_merge([
-            'name' => $fake->text,
-            'created_at' => $fake->word,
-            'update_at' => $fake->word,
+            'license_plate' => $fake->text,
+            'brand' => $fake->text,
+            'model' => $fake->randomDigitNotNull,
+            'capacity' => $fake->randomDigitNotNull,
+            'photo' => $fake->text,
             'created_at' => $fake->word,
             'updated_at' => $fake->word
         ], $busesFields);

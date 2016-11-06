@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class stops
  * @package App\Models
- * @version November 6, 2016, 5:00 am UTC
+ * @version November 6, 2016, 4:28 pm UTC
  */
 class stops extends Model
 {
@@ -45,7 +45,7 @@ class stops extends Model
      * @var array
      */
     public static $rules = [
-        
+        'latitude' => 'longitude text text'
     ];
 
     

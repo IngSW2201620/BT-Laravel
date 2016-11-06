@@ -4,10 +4,10 @@
     {!! Form::date('schedule_time', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Startdate Field -->
+<!-- Stardate Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('startDate', 'Startdate:') !!}
-    {!! Form::date('startDate', null, ['class' => 'form-control']) !!}
+    {!! Form::label('starDate', 'Stardate:') !!}
+    {!! Form::date('starDate', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Enddate Field -->

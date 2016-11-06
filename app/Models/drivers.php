@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class drivers
  * @package App\Models
- * @version November 6, 2016, 4:56 am UTC
+ * @version November 6, 2016, 4:26 pm UTC
  */
 class drivers extends Model
 {
@@ -25,7 +25,7 @@ class drivers extends Model
         'last_name',
         'document_type',
         'document_number',
-        'driving_license_id',
+        'driving_license',
         'rh',
         'photo'
     ];
@@ -39,8 +39,8 @@ class drivers extends Model
         'first_name' => 'string',
         'last_name' => 'string',
         'document_type' => 'string',
-        'document_number' => 'string',
-        'driving_license_id' => 'string',
+        'document_number' => 'integer',
+        'driving_license' => 'string',
         'rh' => 'string',
         'photo' => 'string'
     ];

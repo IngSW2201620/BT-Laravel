@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreatedriversTable extends Migration
+class CreatebusPositionsTable extends Migration
 {
 
     /**
@@ -13,17 +13,14 @@ class CreatedriversTable extends Migration
      */
     public function up()
     {
-        Schema::create('drivers', function (Blueprint $table) {
+        Schema::create('bus_positions', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('first_name');
-            $table->text('last_name');
-            $table->text('document_type');
-            $table->text('document_number');
-            $table->text('driving_license_id');
-            $table->text('rh');
-            $table->text('photo');
+            $table->integer('id_bus')->unsigned();
+            $table->text('latitude');
+            $table->text('longitude');
             $table->timestamps();
             $table->softDeletes();
+            $table->foreign('id_bus')->references('id')->on('buses');
         });
     }
 
@@ -34,6 +31,6 @@ class CreatedriversTable extends Migration
      */
     public function down()
     {
-        Schema::drop('drivers');
+        Schema::drop('bus_positions');
     }
 }

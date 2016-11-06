@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class routeStatuses
  * @package App\Models
- * @version November 6, 2016, 4:51 am UTC
+ * @version November 6, 2016, 4:24 pm UTC
  */
 class routeStatuses extends Model
 {

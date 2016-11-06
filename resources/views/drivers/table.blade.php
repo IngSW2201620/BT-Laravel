@@ -4,7 +4,7 @@
         <th>Last Name</th>
         <th>Document Type</th>
         <th>Document Number</th>
-        <th>Driving License Id</th>
+        <th>Driving License</th>
         <th>Rh</th>
         <th>Photo</th>
         <th colspan="3">Action</th>
@@ -16,7 +16,7 @@
             <td>{!! $drivers->last_name !!}</td>
             <td>{!! $drivers->document_type !!}</td>
             <td>{!! $drivers->document_number !!}</td>
-            <td>{!! $drivers->driving_license_id !!}</td>
+            <td>{!! $drivers->driving_license !!}</td>
             <td>{!! $drivers->rh !!}</td>
             <td>{!! $drivers->photo !!}</td>
             <td>

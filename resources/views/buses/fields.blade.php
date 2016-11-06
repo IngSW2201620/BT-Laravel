@@ -1,19 +1,31 @@
-<!-- Name Field -->
+<!-- License Plate Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('name', 'Name:') !!}
-    {!! Form::text('name', null, ['class' => 'form-control']) !!}
+    {!! Form::label('license_plate', 'License Plate:') !!}
+    {!! Form::text('license_plate', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Created At Field -->
+<!-- Brand Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('created_at', 'Created At:') !!}
-    {!! Form::date('created_at', null, ['class' => 'form-control']) !!}
+    {!! Form::label('brand', 'Brand:') !!}
+    {!! Form::text('brand', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Update At Field -->
+<!-- Model Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('update_at', 'Update At:') !!}
-    {!! Form::date('update_at', null, ['class' => 'form-control']) !!}
+    {!! Form::label('model', 'Model:') !!}
+    {!! Form::text('model', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Capacity Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('capacity', 'Capacity:') !!}
+    {!! Form::text('capacity', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Photo Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('photo', 'Photo:') !!}
+    {!! Form::text('photo', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->

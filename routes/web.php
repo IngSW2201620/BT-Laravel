@@ -26,14 +26,6 @@ Route::get('/home', 'HomeController@index');
 
 Route::resource('buses', 'busesController');
 
-Route::resource('routeStatuses', 'route_statusesController');
-
-Route::resource('routeStatuses', 'route_statusesController');
-
-Route::resource('buses', 'busesController');
-
-Route::resource('routeStatuses', 'route_statusesController');
-
 Route::resource('routeStatuses', 'routeStatusesController');
 
 Route::resource('drivers', 'driversController');

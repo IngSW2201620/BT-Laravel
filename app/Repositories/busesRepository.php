@@ -11,9 +11,11 @@ class busesRepository extends BaseRepository
      * @var array
      */
     protected $fieldSearchable = [
-        'name',
-        'created_at',
-        'update_at'
+        'license_plate',
+        'brand',
+        'model',
+        'capacity',
+        'photo'
     ];
 
     /**

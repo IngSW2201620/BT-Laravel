@@ -15,7 +15,7 @@ class driversRepository extends BaseRepository
         'last_name',
         'document_type',
         'document_number',
-        'driving_license_id',
+        'driving_license',
         'rh',
         'photo'
     ];
