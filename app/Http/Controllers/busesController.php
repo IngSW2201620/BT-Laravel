@@ -32,9 +32,16 @@ class busesController extends AppBaseController
         $this->busesRepository->pushCriteria(new RequestCriteria($request));
         $buses = $this->busesRepository->all();
 
+        /** Desactivado por JDV
         return view('buses.index')
             ->with('buses', $buses);
+        */  
+            return response()
+            ->json(['buses', $buses])
+            ->withCallback($request->input('callback'));
     }
+
+
 
     /**
      * Show the form for creating a new buses.
@@ -80,8 +87,11 @@ class busesController extends AppBaseController
 
             return redirect(route('buses.index'));
         }
-
+        /** Desactivado por JDV
         return view('buses.show')->with('buses', $buses);
+        */
+
+        return response()->json(['buses', $buses ]);
     }
 
     /**

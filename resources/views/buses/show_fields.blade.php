@@ -46,3 +46,5 @@
     <p>{!! $buses->updated_at !!}</p>
 </div>
 
+
+
